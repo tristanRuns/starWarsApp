@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/posterView"
+            android:layout_width="140dp"
+            android:layout_height="230dp"
+
+
+            android:layout_below="@+id/title_text_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            tools:layout_editor_absoluteX="172dp"
+            tools:layout_editor_absoluteY="202dp" />
+
+        <TextView
+            android:id="@+id/textViewPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/posterView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="47dp"
+            android:layout_marginLeft="75dp"
+
+            android:text="TextView" />
+
+
+        <RadioButton
+            android:id="@+id/Already_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignStart="@+id/do_not_like"
+            android:layout_alignTop="@+id/do_not_like"
+            android:layout_marginTop="32dp"
+            android:onClick="hasSeen"
+            android:text="Already Seen" />
+
+        <RadioButton
+            android:id="@+id/want_to_see"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignStart="@+id/Already_seen"
+            android:layout_below="@+id/Already_seen"
+            android:text="Want to See" />
+
+        <RadioButton
+            android:id="@+id/do_not_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_below="@+id/textViewPage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Do not Like" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/want_to_see"
+            android:layout_marginTop="11dp"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
